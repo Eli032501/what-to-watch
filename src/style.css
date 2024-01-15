@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 253, 250);
+  color: rgb(255, 255, 255);
 }
 
 section {
@@ -17,6 +17,7 @@ section {
   margin: 30px auto;
 }
 .label-ai {
+  font-size: 16px;
   color: #520c11;
   font-weight: 500;
   margin: 10px;
@@ -26,11 +27,11 @@ section {
 .container {
   border-radius: 10px;
   padding: 20px 30px;
-  margin-bottom: 10px;
 }
 header {
-  background-color: #710f16ef;
-  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #006f57;
+  color: #fff3f4;
 }
 
 h1 {
@@ -38,7 +39,7 @@ h1 {
   text-transform: capitalize;
   font-size: 34px;
   text-align: center;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 h2 {
   text-align: center;
@@ -47,8 +48,39 @@ h2 {
   font-size: 26px;
 }
 
-main {
-  background-color: #fff3f494;
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  font-size: 14px;
+}
+
+.input-text {
+  width: 80%;
+  border-radius: 4px;
+  border: 2px solid #710f16;
+  background-color: #fff3f4e3;
+  padding: 0px 10px;
+}
+
+.input-submit {
+  border-radius: 4px;
+  border: 2px solid #710f16;
+  background-color: #710f16;
+  color: #ffffff;
+  width: 18%;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.input-submit:hover {
+  border: 2px solid #fff3f4;
+  opacity: 0.95;
+}
+.output-display {
+  background-color: #fff3f4ed;
+  color: #1b0204;
+  margin-top: 20px;
 }
 
 footer {
@@ -66,3 +98,16 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/*
+RED1
+  #BB010B
+RED2
+  #CD1624
+GREEN1
+  #006F57
+GEEN2
+  #23856D
+WHITE
+  #FAF8F8
+*/
