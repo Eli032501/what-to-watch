@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: rgb(255, 253, 250);
 }
+
 section {
   max-width: 650px;
   margin: 30px auto;
@@ -19,6 +20,7 @@ section {
   color: #520c11;
   font-weight: 500;
   margin: 10px;
+  text-shadow: #fdf8f8 0px 0 4px;
 }
 
 .container {
@@ -46,15 +48,16 @@ h2 {
 }
 
 main {
-  background-color: #710f16aa;
+  background-color: #fff3f494;
 }
 
 footer {
+  font-size: 14px;
   text-align: center;
   color: #520c11;
-  font-weight: 400;
+  font-weight: 500;
   margin: 10px;
-  text-shadow: #ffffff;
+  text-shadow: #fdf8f8 0px 0 3px;
 }
 footer a {
   text-decoration: none;
