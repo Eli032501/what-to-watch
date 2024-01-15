@@ -1,4 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
 body {
-  background-color: mediumpurple;
-  font-family: "Oswald", sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/717/original/pexels-megha-mangal-806880.jpg?1705317138");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 253, 250);
+}
+section {
+  max-width: 650px;
+  margin: 30px auto;
+}
+.label-ai {
+  color: #520c11;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.container {
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+}
+header {
+  background-color: #710f16ef;
+  color: #ffffff;
+}
+
+h1 {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 34px;
+  text-align: center;
+  margin: 10px 0;
+}
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+main {
+  background-color: #710f16aa;
+}
+
+footer {
+  text-align: center;
+  color: #520c11;
+  font-weight: 400;
+  margin: 10px;
+  text-shadow: #ffffff;
+}
+footer a {
+  text-decoration: none;
+  color: #95232b;
+}
+footer a:hover {
+  text-decoration: underline;
 }
