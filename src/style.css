@@ -4,29 +4,33 @@
   margin: 0;
 }
 body {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/717/original/pexels-megha-mangal-806880.jpg?1705317138");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/937/original/pexels-megha-mangal-802055.jpg?1705495190");
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 255, 255);
+}
+
+.filter {
+  background-color: #3a3a3a20;
+  height: 100vh;
 }
 
 section {
-  max-width: 650px;
-  margin: 40px auto;
+  max-width: 630px;
+  margin: 0px auto;
+  padding-top: 40px;
 }
 .label-ai {
-  font-size: 16px;
+  font-size: 18px;
   color: #006f57;
   font-weight: 500;
-  margin: 10px;
-  text-shadow: #ebfffbd2 0px 0 8px;
+  margin-bottom: 10px;
+  text-shadow: #ffffffca 0px 0 10px;
 }
 
 .container {
   border-radius: 10px;
-  padding: 30px;
+  padding: 24px;
 }
 header {
   box-shadow: 1px 1px 14px 1px #525252a3;
@@ -40,7 +44,7 @@ h1 {
   text-transform: capitalize;
   font-size: 34px;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 h2 {
   text-align: center;
@@ -81,7 +85,7 @@ h2 {
   font-size: 14px;
   width: 78%;
   border-radius: 6px;
-  border: 2px solid #710f16;
+  border: 2px solid #8e0f18;
   background-color: #faf8f8e9;
   padding: 0px 10px;
   font-family: "Poppins", sans-serif;
@@ -90,8 +94,8 @@ h2 {
 .input-submit {
   border-radius: 6px;
   font-size: 14px;
-  border: 2px solid #710f16;
-  background-color: #710f16;
+  border: 2px solid #8e0f18;
+  background-color: #8e0f18;
   color: #faf8f8;
   width: 20%;
   cursor: pointer;
@@ -116,14 +120,14 @@ h2 {
 footer {
   font-size: 14px;
   text-align: center;
-  color: #710f16;
+  color: #006f57;
   font-weight: 500;
   margin: 10px;
   text-shadow: #ffffff 1px 0 10px;
 }
 footer a {
   text-decoration: none;
-  color: #006f57;
+  color: #8e0f18;
 }
 footer a:hover {
   text-decoration: underline;
