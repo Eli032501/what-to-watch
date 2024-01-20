@@ -17,10 +17,10 @@ function getOutput(event) {
   let buttonOption = inputButton.value;
   let userInput = document.querySelector("#input-user");
   let apiKey = "ba3t92f6af6b8204143cbo1c5a032ba3";
-  let prompt = `give-me 3 options of ${buttonOption} in the category of ${userInput.value}`;
+  let prompt = `give-me 3 options of ${buttonOption} that follow the next parameters: ${userInput.value}`;
   console.log(prompt);
   let context =
-    "you're well informed about all movis and series, and you know the best to recommend. You never explain your reasons or introduce your answers. You only give the name of the production and the year which it was realeased. You give all your answers in formated in HTML using a <ul> element.";
+    "you're well informed about all movis and series, and you know the best to recommend. You never explain your reasons or introduce your answers. You only give the name of the production and the year which it was realeased. You give all your answers formated in HTML using a <ul> element and without using <b> or <strong> element.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("generating recomendations");
@@ -47,5 +47,5 @@ function changeOptionButon() {
 let inputButton = document.querySelector("#button");
 inputButton.addEventListener("click", changeOptionButon);
 
-let formSearch = document.querySelector("#form-search");
-formSearch.addEventListener("click", getOutput);
+let formSubmit = document.querySelector("#form-submit");
+formSubmit.addEventListener("click", getOutput);

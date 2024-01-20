@@ -16,48 +16,47 @@
   </head>
   <body class="background-style">
     <div class="filter">
+      <p class="label-ai">AI Movies and Series Generator</p>
       <section>
-        <p class="label-ai">AI Movies and Series Generator</p>
         <header class="container">
           <h1>Don't know what to watch?</h1>
-          <h2>Get suggestions for</h2>
-          <form class="div-buttons">
+          <div class="div-option-button">
+            <h2>Get suggestions of</h2>
             <input id="button" type="button" value="Movies" />
-          </form>
+          </div>
         </header>
         <main>
           <form class="input-form">
             <input
               class="input-text"
               type="text"
-              placeholder="Type a genre or category - ex. romance, science fiction, ..."
+              placeholder="ex. romance and recent, science fiction and awarded, ..."
               autofocus
               required
               autocomplete="off"
               id="input-user"
             />
-            <input id="form-search" class="input-submit" type="submit" />
+            <input id="form-submit" class="input-submit" type="submit" />
           </form>
           <div id="output-div" class="disabled output-display"></div>
         </main>
-
-        <footer>
-          Coded and designed by
-          <a href="https://github.com/Eli032501" target="_blank"
-            >Eliana Pereira</a
-          >
-          - on
-          <a href="https://github.com/Eli032501/what-to-watch" target="_blank"
-            >GitHub</a
-          >
-          and hosted on
-          <a
-            href="https://what-to-watch-ai-generator.netlify.app/"
-            target="_blank"
-            >Netlify</a
-          >
-        </footer>
       </section>
+      <footer>
+        Coded and designed by
+        <a href="https://github.com/Eli032501" target="_blank"
+          >Eliana Pereira</a
+        >
+        - on
+        <a href="https://github.com/Eli032501/what-to-watch" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a
+          href="https://what-to-watch-ai-generator.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
     <script src="src/script.js"></script>
   </body>

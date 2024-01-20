@@ -14,18 +14,15 @@ body {
   background-color: #3a3a3a20;
   min-height: 100vh;
 }
-
+.label-ai {
+  font-size: 16px;
+  color: #faf8f8;
+  padding: 10px 15px;
+}
 section {
   max-width: 630px;
   margin: 0px auto;
   padding-top: 40px;
-}
-.label-ai {
-  font-size: 18px;
-  color: #006f57;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-shadow: #ffffffca 0px 0 10px;
 }
 
 .container {
@@ -46,30 +43,32 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+
+.div-option-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  align-items: center;
+}
 h2 {
   text-align: center;
   font-weight: 400;
   font-size: 24px;
 }
 
-.div-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
-}
-#button {
-  margin: 0 8px;
-  padding: 6px 14px;
-  border-radius: 6px;
-  background-color: #006f57;
-  border: 1.5px solid #faf8f8;
-  color: #faf8f8;
-  font-size: 18px;
+.div-option-button input {
   font-weight: 400;
+  font-size: 20px;
+  color: #faf8f8;
+  border: 1.5px solid #faf8f8;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-left: 12px;
+  background-color: #006f57;
   font-family: "Poppins", sans-serif;
   transition: all 150ms;
 }
-#button:hover {
+.div-option-button input:hover {
   background-color: #8e0f18;
   color: #fff;
 
@@ -137,16 +136,18 @@ h3 {
 }
 
 footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #006f57;
   font-size: 14px;
   text-align: center;
-  color: #006f57;
-  font-weight: 500;
-  margin: 10px;
-  text-shadow: #ffffff 1px 0 10px;
+  color: #8ecebe;
+  padding: 6px 0px;
 }
 footer a {
   text-decoration: none;
-  color: #8e0f18;
+  color: #faf8f8;
 }
 footer a:hover {
   text-decoration: underline;
