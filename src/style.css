@@ -57,7 +57,7 @@ h2 {
   justify-content: center;
   margin-top: 12px;
 }
-.button {
+#button {
   margin: 0 8px;
   padding: 6px 14px;
   border-radius: 6px;
@@ -69,7 +69,13 @@ h2 {
   font-family: "Poppins", sans-serif;
   transition: all 150ms;
 }
-.button:hover {
+#button:hover {
+  background-color: #8e0f18;
+  color: #fff;
+
+  cursor: pointer;
+}
+.change-option {
   background-color: #faf8f8;
   color: #006f57;
   cursor: pointer;
@@ -109,9 +115,9 @@ h2 {
   opacity: 0.98;
 }
 h3 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
-  color: #006f57;
+  color: #0c5d49;
 }
 .output-display {
   background-color: #faf8f8f2;
@@ -126,7 +132,8 @@ h3 {
   display: none;
 }
 .Typewriter__wrapper ul {
-  margin: 6px 16px;
+  margin: 6px 22px;
+  list-style-type: disclosure-closed;
 }
 
 footer {

@@ -21,13 +21,12 @@
         <header class="container">
           <h1>Don't know what to watch?</h1>
           <h2>Get suggestions for</h2>
-          <div class="div-buttons">
-            <button class="button">Movies</button>
-            <button class="button">Series</button>
-          </div>
+          <form class="div-buttons">
+            <input id="button" type="button" value="Movies" />
+          </form>
         </header>
         <main>
-          <form class="input-form" id="form-search">
+          <form class="input-form">
             <input
               class="input-text"
               type="text"
@@ -37,7 +36,7 @@
               autocomplete="off"
               id="input-user"
             />
-            <input class="input-submit" type="submit" />
+            <input id="form-search" class="input-submit" type="submit" />
           </form>
           <div id="output-div" class="disabled output-display"></div>
         </main>
