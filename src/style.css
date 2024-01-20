@@ -22,7 +22,7 @@ body {
 section {
   max-width: 630px;
   margin: 0px auto;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .container {
@@ -115,7 +115,7 @@ h2 {
 }
 h3 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: #0c5d49;
 }
 .output-display {
@@ -125,14 +125,20 @@ h3 {
   color: #1b0204;
   margin-top: 20px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 14px 30px;
 }
 .disabled {
   display: none;
 }
 .Typewriter__wrapper ul {
-  margin: 6px 22px;
+  margin: 4px 24px 0px;
   list-style-type: disclosure-closed;
+}
+
+.signature {
+  font-size: 14px;
+  color: #23856d;
+  text-align: right;
 }
 
 footer {
