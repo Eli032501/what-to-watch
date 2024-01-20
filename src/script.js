@@ -23,18 +23,14 @@ function getOutput(event) {
   let prompt = `give-me 3 options of ${buttonOption} that follow the next parameters: ${userInput.value} `;
   console.log(prompt);
   let context =
-    "you're well informed about all movis and series, and you know the best to recommend. You never explain your reasons or introduce your answers. You only give the name of the production and the year which it was realeased. You give all your answers formated in HTML using a <ul> element and without using <b> or <strong> element.";
+    "you're well informed about all movis and series, and you know the best to recommend. You never explain your reasons or introduce your answers. You only give the name of the production and the year which it was realeased. You give all your answers formated in HTML using a <ul> element and without using any element with bold font weight, color or underline text.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("generating recomendations");
   let outputDiv = document.querySelector("#output-div");
   outputDiv.classList.remove("disabled");
-  new Typewriter("#output-div", {
-    strings: `Generating recomendations...`,
-    autoStart: true,
-    delay: 30,
-    cursor: null,
-  });
+  outputDiv.innerHTML = `<p class="generating">Generating ${buttonOption} options with the parameters: ${userInput.value}</p>`;
+
   axios.get(apiUrl).then(displayResults);
 }
 

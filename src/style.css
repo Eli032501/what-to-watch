@@ -113,6 +113,16 @@ h2 {
   border: 2px solid #faf8f8;
   opacity: 0.98;
 }
+
+.generating {
+  animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
 h3 {
   font-weight: 500;
   font-size: 18px;
