@@ -12,7 +12,7 @@ body {
 
 .filter {
   background-color: #3a3a3a20;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section {
@@ -108,13 +108,25 @@ h2 {
   border: 2px solid #faf8f8;
   opacity: 0.98;
 }
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #006f57;
+}
 .output-display {
-  text-transform: capitalize;
   background-color: #faf8f8f2;
   line-height: 34px;
   box-shadow: 1px 1px 14px 1px #525252a3;
   color: #1b0204;
   margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.disabled {
+  display: none;
+}
+.Typewriter__wrapper ul {
+  margin: 6px 16px;
 }
 
 footer {
