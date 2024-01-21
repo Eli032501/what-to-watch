@@ -21,12 +21,12 @@ function getOutput(event) {
   let prompt = `give-me 3 options of ${buttonOption} that follow the next parameters: ${userInput.value} `;
 
   let context =
-    "you're well informed about all movis and series, and you know the best to recommend. You never explain your reasons or introduce your answers. You only give the name of the production and the year which it was realeased. You give all your answers formated in HTML using a <ul> element and without using any element with bold font weight, color or underline text.";
+    "you are well informed about all movies and series, and you know the best to recommend. You never explain your reasons or introduce your answers. You only enter the name of the production and the year it was released. You give all your responses formatted in HTML using a <ul> element and without using any elements with bold font weight, color or underlined text. Do not use links in the answers ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let outputDiv = document.querySelector("#output-div");
   outputDiv.classList.remove("disabled");
-  outputDiv.innerHTML = `<p class="generating">Generating ${buttonOption} options with the parameters: ${userInput.value}</p>`;
+  outputDiv.innerHTML = `<p class="generating">Generating ${buttonOption} options - ${userInput.value}</p>`;
 
   axios.get(apiUrl).then(displayResults);
 }
